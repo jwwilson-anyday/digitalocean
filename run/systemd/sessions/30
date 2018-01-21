@@ -1,0 +1,17 @@
+# This is private data. Do not parse.
+UID=0
+USER=root
+ACTIVE=1
+STATE=active
+REMOTE=1
+TYPE=tty
+CLASS=user
+SCOPE=session-30.scope
+FIFO=/run/systemd/sessions/30.ref
+REMOTE_HOST=68.231.206.196
+SERVICE=sshd
+POSITION=0
+LEADER=12575
+AUDIT=30
+REALTIME=1516495418599839
+MONOTONIC=18647654793

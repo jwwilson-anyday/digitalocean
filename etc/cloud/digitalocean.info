@@ -1,0 +1,7 @@
+import_url:   http://cloud-images.ubuntu.com/releases/xenial/release/ubuntu-16.04-server-cloudimg-amd64-uefi1.img
+import_date:  2017-11-03
+distribution: Ubuntu
+release:      16.04
+codename:     xenial
+build_arch:   amd64
+build_tag:    70c10381-e25f-4962-8076-5510453c6df9

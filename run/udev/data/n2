@@ -1,0 +1,23 @@
+I:2213769
+E:DEVPATH=/devices/pci0000:00/0000:00:03.0/virtio0/net/eth0
+E:SUBSYSTEM=net
+E:INTERFACE=eth0
+E:IFINDEX=2
+E:USEC_INITIALIZED=2213769
+E:ID_NET_NAME_MAC=enx0af2bb1aac25
+E:ID_NET_NAME_PATH=enp0s3
+E:ID_NET_NAME_SLOT=ens3
+E:ID_BUS=pci
+E:ID_VENDOR_ID=0x1af4
+E:ID_MODEL_ID=0x1000
+E:ID_PCI_CLASS_FROM_DATABASE=Network controller
+E:ID_PCI_SUBCLASS_FROM_DATABASE=Ethernet controller
+E:ID_VENDOR_FROM_DATABASE=Red Hat, Inc
+E:ID_MODEL_FROM_DATABASE=Virtio network device
+E:ID_PATH=virtio-pci-0000:00:03.0
+E:ID_PATH_TAG=virtio-pci-0000_00_03_0
+E:ID_NET_DRIVER=virtio_net
+E:ID_NET_LINK_FILE=/lib/systemd/network/99-default.link
+E:SYSTEMD_ALIAS=/sys/subsystem/net/devices/ens3 /sys/subsystem/net/devices/eth0
+E:TAGS=:systemd:
+G:systemd

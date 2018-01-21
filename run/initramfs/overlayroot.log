@@ -1,0 +1,3 @@
+/dev/vda1/etc/overlayroot.local.conf set cfgdisk='LABEL=OROOTCFG'
+get_cfg(LABEL=OROOTCFG): not present
+overlayroot disabled

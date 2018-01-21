@@ -1,0 +1,18 @@
+# This is private data. Do not parse.
+UID=1000
+USER=joewilson
+ACTIVE=1
+STATE=active
+REMOTE=0
+TYPE=tty
+CLASS=user
+SCOPE=session-14.scope
+FIFO=/run/systemd/sessions/14.ref
+SEAT=seat0
+TTY=/dev/tty1
+SERVICE=login
+VTNR=1
+LEADER=8714
+AUDIT=14
+REALTIME=1516484702184265
+MONOTONIC=7931239219

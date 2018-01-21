@@ -1,0 +1,34 @@
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-98-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+92 packages can be updated.
+55 updates are security updates.
+
+
+*** System restart required ***
+-------------------------------------------------------------------------------
+Welcome to the MEAN Stack!
+
+MEAN is a boilerplate that provides a nice starting point for MongoDB, Node.js,
+Express, and AngularJS based applications. It is designed to give you quick and
+organized way to start developing of MEAN based web apps with useful modules like
+mongoose and passport pre-bundled and configured. We mainly try to take care of
+the connection points between existing popular frameworks and solve common
+integration problems.
+
+MEAN has been installed via "docker-compose"
+
+To get started with the sample app, go to "/opt/mean" and run "docker-compose up"
+You can then view the sample app at http://159.89.145.138:3000
+
+The "ufw" firewall is enabled. All ports except for 22, 80, 443, and 3000
+are BLOCKED.
+
+-------------------------------------------------------------------------------
+To delete this message of the day: rm -rf /etc/update-motd.d/99-one-click

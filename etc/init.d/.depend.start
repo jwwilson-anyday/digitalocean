@@ -1,0 +1,18 @@
+TARGETS = open-vm-tools lvm2-lvmetad rsyslog lvm2-lvmpolld lxd unattended-upgrades lxcfs uuidd killprocs apport irqbalance mdadm thermald cgroupfs-mount atd single acpid ssh cron rsync dbus docker plymouth rc.local ondemand grub-common
+INTERACTIVE =
+irqbalance: rsyslog
+mdadm: rsyslog
+thermald: rsyslog
+cgroupfs-mount: rsyslog
+atd: rsyslog
+single: killprocs
+acpid: rsyslog
+ssh: rsyslog
+cron: rsyslog
+rsync: rsyslog
+dbus: rsyslog
+docker: rsyslog cgroupfs-mount
+plymouth: open-vm-tools lvm2-lvmetad rsyslog irqbalance mdadm lvm2-lvmpolld thermald cgroupfs-mount lxd unattended-upgrades atd docker lxcfs uuidd acpid ssh apport cron rsync dbus
+rc.local: open-vm-tools lvm2-lvmetad rsyslog irqbalance mdadm lvm2-lvmpolld thermald cgroupfs-mount lxd unattended-upgrades atd docker lxcfs uuidd acpid ssh apport cron rsync dbus
+ondemand: open-vm-tools lvm2-lvmetad rsyslog irqbalance mdadm lvm2-lvmpolld thermald cgroupfs-mount lxd unattended-upgrades atd docker lxcfs uuidd acpid ssh apport cron rsync dbus
+grub-common: open-vm-tools lvm2-lvmetad rsyslog irqbalance mdadm lvm2-lvmpolld thermald cgroupfs-mount lxd unattended-upgrades atd docker lxcfs uuidd acpid ssh apport cron rsync dbus

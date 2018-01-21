@@ -1,0 +1,9 @@
+S:disk/by-path/virtio-pci-0000:00:05.0
+W:13
+I:2532997
+E:ID_PATH=virtio-pci-0000:00:05.0
+E:ID_PATH_TAG=virtio-pci-0000_00_05_0
+E:ID_PART_TABLE_UUID=0ebd9387-344f-4b4f-a425-e1faf6b035be
+E:ID_PART_TABLE_TYPE=gpt
+E:ID_FS_TYPE=
+G:systemd

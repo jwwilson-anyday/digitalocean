@@ -1,0 +1,9 @@
+/lib/systemd/system-generators/cloud-init-generator normal=/run/systemd/generator early=/run/systemd/generator.early late=/run/systemd/generator.late
+kernel command line (/proc/cmdline): BOOT_IMAGE=/boot/vmlinuz-4.4.0-98-generic root=UUID=4e8e8046-457b-49ca-b4ed-78676a0fd2ab ro cgroup_enable=memory swapaccount=1 console=tty1 console=ttyS0
+kernel_cmdline found unset
+etc_file found unset
+default found enabled
+checking for datasource
+ds-identify rc=0
+ds-identify _RET=found
+enabled via /run/systemd/generator.early/multi-user.target.wants/cloud-init.target -> /lib/systemd/system/cloud-init.target

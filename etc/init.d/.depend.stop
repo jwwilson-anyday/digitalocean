@@ -1,0 +1,15 @@
+TARGETS = open-vm-tools lvm2-lvmetad lvm2-lvmpolld lxd unattended-upgrades lxcfs uuidd irqbalance mdadm thermald atd resolvconf ufw docker plymouth open-iscsi urandom cgroupfs-mount iscsid sendsigs rsyslog umountnfs.sh hwclock.sh networking umountfs cryptdisks cryptdisks-early umountroot mdadm-waitidle halt reboot
+cgroupfs-mount: docker
+iscsid: open-iscsi
+sendsigs: open-vm-tools open-iscsi irqbalance mdadm iscsid thermald cgroupfs-mount lxd unattended-upgrades atd docker lxcfs uuidd plymouth
+rsyslog: sendsigs irqbalance mdadm thermald cgroupfs-mount atd docker
+umountnfs.sh: open-vm-tools rsyslog irqbalance thermald cgroupfs-mount lxd sendsigs unattended-upgrades atd docker lxcfs uuidd plymouth
+hwclock.sh: rsyslog atd uuidd
+networking: open-iscsi iscsid umountnfs.sh
+umountfs: open-vm-tools hwclock.sh lvm2-lvmetad open-iscsi irqbalance mdadm lvm2-lvmpolld iscsid urandom thermald cgroupfs-mount lxd umountnfs.sh unattended-upgrades networking atd docker lxcfs uuidd plymouth resolvconf
+cryptdisks: umountfs
+cryptdisks-early: cryptdisks umountfs
+umountroot: cryptdisks cryptdisks-early umountfs
+mdadm-waitidle: umountroot
+halt: mdadm-waitidle umountroot
+reboot: mdadm-waitidle umountroot
